@@ -1,8 +1,10 @@
 ---
 layout: page
-title: People
-permalink: /people/
+title: Group
+permalink: /
 ---
+
+We are AI Security and Transparency Department at NASK - National Research Institute.
 
 ## PI
 
