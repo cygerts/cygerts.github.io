@@ -10,12 +10,17 @@ permalink: /people/
 
 ## Postdocs
 
-- Placeholder Name
+- Marcin Sendera,
+- Jan Dubiński,
 
 ## PhD Students
 
-- Placeholder Name
+- Maciej Chrabąszcz,
+- Mateusz Kowalczyk,
 
 ## Graduate Students
 
-- Placeholder Name
+- Marek Jeliński,
+- Dominik Lau,
+- Antoni Pawłowicz,
+- Aleksander Szymczyk

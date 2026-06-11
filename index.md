@@ -4,9 +4,7 @@ title: Home
 permalink: /
 ---
 
-Welcome to the website of the Cygert Research Group.
-
-We work on machine learning and related areas.
+Welcome to the website of the AI Security and Transparency Department at NASK - National Research Institute.
 
 ## Quick Links
 
