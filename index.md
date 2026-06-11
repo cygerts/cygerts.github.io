@@ -4,6 +4,6 @@ title: Home
 permalink: /
 ---
 
-Welcome to AI Security Group at NASK.
+<meta http-equiv="refresh" content="0; url=/group/" />
 
-Continue to [Group](/group/), [Publications](/publications/), [Funding](/funding/), or [News](/news/).
+Redirecting to [Group](/group/)...
