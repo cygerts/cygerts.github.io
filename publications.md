@@ -21,3 +21,7 @@ permalink: /publications/
 - [Jailbreaking Vision-Language Models Through the Visual Modality](https://arxiv.org/abs/2605.00583)  
   Aharon Azulay, Jan Dubiński, Zhuoyun Li, Atharv Mittal, Yossi Gandelsman  
   *ICML 2026* 
+
+- [Conditioned Activation Transport for T2I Safety Steering](https://arxiv.org/abs/2603.03163)  
+  Maciej Chrabąszcz, Aleksander Szymczyk, Jan Dubiński, Tomasz Trzciński, Franziska Boenisch, Adam Dziedzic  
+  *arXiv preprint*
