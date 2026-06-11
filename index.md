@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-Welcome to the website of the AI Security and Transparency Department at NASK - National Research Institute.
+Welcome to the website of the AI Security Group at NASK.
 
 ## Quick Links
 
