@@ -6,8 +6,6 @@ permalink: /funding/
 
 ## Current Funding
 
-- Placeholder: Grant title, funding agency, years, and role.
+- "Eval FM: Reliable Safety Evaluation in Foundation Models", National Science Centre, Sebastian Cygert, 2026 - 2029
+- "Training Data Identification in Large GenerativeModels"", National Science Centre, Jan Dubiński, 2026 - 2028 .
 
-## Past Funding
-
-- Placeholder: Grant title, funding agency, years, and role.
