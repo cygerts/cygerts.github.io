@@ -1,11 +1,21 @@
-# cygerts.github.io
+# Cygert Research Group Website
 
-Simple GitHub Pages site.
+Simple GitHub Pages website for a research group.
 
-## Development
+## Site Structure
 
-This repository hosts the source for the public website.
+- Home: `index.md`
+- People: `people.md`
+- Publications: `publications.md`
+- Funding: `funding.md`
+- News: `news.md`
+
+## How To Edit
+
+1. Open the page file you want to update.
+2. Edit Markdown content.
+3. Commit and push to `main`.
 
 ## Deployment
 
-GitHub Pages will publish this repository when Pages is enabled in repository settings.
+This site uses Jekyll with the `minima` theme and deploys on GitHub Pages from the `main` branch.

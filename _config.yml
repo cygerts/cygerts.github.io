@@ -1,0 +1,10 @@
+title: Cygert Research Group
+description: Research group website
+theme: minima
+markdown: kramdown
+
+header_pages:
+  - people.md
+  - publications.md
+  - funding.md
+  - news.md
