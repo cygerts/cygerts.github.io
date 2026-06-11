@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Group
-permalink: /
+permalink: /group/
 ---
 
 We are AI Security and Transparency Department at NASK - National Research Institute.
@@ -17,8 +17,8 @@ We are AI Security and Transparency Department at NASK - National Research Insti
 
 ## PhD Students
 
-- [Maciej Chrabąszcz],(https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate)
-- Mateusz Kowalczyk
+- Maciej Chrabąszcz
+- [Mateusz Kowalczyk](https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate)
 
 ## Graduate Students
 
