@@ -202,6 +202,7 @@ permalink: /publications/
         </div>
         <div class="pub-links">
           <a href="https://arxiv.org/pdf/2502.16174" target="_blank" rel="noopener noreferrer">PDF</a>
+          <a href="https://github.com/maciejchrabaszcz/latent-prototype-moderator" target="_blank" rel="noopener noreferrer">code</a>
         </div>
       </div>
     </article>
@@ -278,6 +279,7 @@ permalink: /publications/
         </div>
         <div class="pub-links">
           <a href="https://arxiv.org/pdf/2603.03163" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="https://github.com/NASK-AISafety/conditional-activation-transport" target="_blank" rel="noopener noreferrer">code</a>
         </div>
       </div>
     </article>
