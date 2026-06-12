@@ -4,6 +4,16 @@ title: Group
 permalink: /group/
 ---
 
+<style>
+	.group-page h2 {
+		font-size: 1.35rem;
+		margin-top: 1.4rem;
+		margin-bottom: 0.7rem;
+	}
+</style>
+
+<section class="group-page">
+
 We are AI Security and Transparency Department at NASK - National Research Institute.
 
 ## Principal Investigator
@@ -26,3 +36,5 @@ We are AI Security and Transparency Department at NASK - National Research Insti
 - Dominik Lau
 - Antoni Pawłowicz
 - Aleksander Szymczyk
+
+</section>
