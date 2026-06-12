@@ -6,7 +6,7 @@ permalink: /group/
 
 We are AI Security and Transparency Department at NASK - National Research Institute.
 
-## PI
+## Principal Investigator
 
 - [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl)
 
