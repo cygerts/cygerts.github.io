@@ -10,32 +10,38 @@ permalink: /group/
 		margin-top: 1.4rem;
 		margin-bottom: 0.7rem;
 	}
+
+	.post-content ul {
+		list-style: none;
+		padding-left: 1rem;
+		margin-top: 0.2rem;
+		margin-bottom: 1rem;
+	}
+
+	.post-content li {
+		margin: 0.35rem 0;
+	}
 </style>
 
 We are AI Security and Transparency Department at NASK - National Research Institute.
 
 ## Principal Investigator
 
-[Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl)
+- [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl)
 
 ## Postdocs
 
-[Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en)
-
-[Jan Dubinski](https://scholar.google.com/citations?hl=en&user=iG319iwAAAAJ&view_op=list_works&sortby=pubdate)
+- [Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en)
+- [Jan Dubinski](https://scholar.google.com/citations?hl=en&user=iG319iwAAAAJ&view_op=list_works&sortby=pubdate)
 
 ## PhD Students
 
-[Maciej Chrabąszcz](https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate)
-
-Mateusz Kowalczyk
+- [Maciej Chrabąszcz](https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate)
+- Mateusz Kowalczyk
 
 ## Graduate Students
 
-Marek Jeliński
-
-Dominik Lau
-
-Antoni Pawłowicz
-
-Aleksander Szymczyk
+- Marek Jeliński
+- Dominik Lau
+- Antoni Pawłowicz
+- Aleksander Szymczyk
