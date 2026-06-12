@@ -171,7 +171,8 @@ permalink: /publications/
 
 <section class="pub-wrap">
   <div class="pub-header">
-    <p>Selected publications and preprints from AI Security Group at NASK.</p>
+ 
+ 
   </div>
 
   <!--
