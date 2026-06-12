@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+  <title id="t">Monitoring the Internal Monologue</title>
+  <desc id="d">Publication thumbnail</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <circle cx="548" cy="82" r="80" fill="#fdba74" fill-opacity="0.26"/>
+  <text x="36" y="150" font-family="Georgia, serif" font-size="30" fill="#ffedd5">Internal Monologue</text>
+  <text x="36" y="192" font-family="Arial, sans-serif" font-size="20" fill="#fed7aa">arXiv Preprint</text>
+</svg>
