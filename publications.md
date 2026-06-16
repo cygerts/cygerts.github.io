@@ -232,7 +232,7 @@ permalink: /publications/
       </figure>
       <div>
         <h3 class="pub-title">Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics</h3>
-        <p class="pub-authors">Aleksander Szymczyk, Marcin Sendera, Sebastian Cygert</p>
+        <p class="pub-authors">Maciej Chrabąszcz, Aleksander Szymczyk, Marcin Sendera, Tomasz Trzciński, Sebastian Cygert</p>
         <div class="pub-meta">
           <span class="pub-chip venue">arXiv Preprint</span>
           <!--
