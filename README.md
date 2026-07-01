@@ -1,4 +1,4 @@
-# AI Security Group at NASK Website
+# AI Safety Group at NASK Website
 
 Simple GitHub Pages website for a research group.
 
