@@ -7,6 +7,8 @@ permalink: /funding/
 ## Current Funding
 
 - [Gaia AI Factory](https://www.eurohpc-ju.europa.eu/poland-gaia-ai-factory_en), 2026 - 2029
+- "SAFEAI: Safe AI - Can Artificial Intelligence Be Safe and Trustworthy?",
+	NASK internal funding, 2026 ([reference](https://science.nask.pl/en/news/13891))
 - "Eval FM: Reliable Safety Evaluation in Foundation Models",
 	National Science Centre, PI: Sebastian Cygert, 2026-2029
 - "Training Data Identification in Large Generative Models",
