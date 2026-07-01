@@ -39,9 +39,10 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 - [Maciej Chrabąszcz](https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate)
 - Mateusz Kowalczyk
 
-## Graduate Students
+## Student Researchers
 
 - Marek Jeliński
 - Dominik Lau
 - Antoni Pawłowicz
 - Aleksander Szymczyk
+- Filip Pawlicki
