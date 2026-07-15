@@ -25,6 +25,8 @@ permalink: /group/
 
 We are AI Safety and Transparency Department at NASK - National Research Institute.
 
+![Group photo](/assets/images/group.jpg){: style="width:100%; max-width:800px; display:block; margin: 1.2rem 0;"}
+
 ## Principal Investigator
 
 - [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl)
