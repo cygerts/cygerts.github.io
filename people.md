@@ -27,4 +27,11 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 
 ![Group photo](/assets/images/group.jpg){: style="width:100%; max-width:800px; display:block; margin: 1.2rem 0;"}
 
-[Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl) (Principal Investigator), [Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en) (Postdoc), Karmela Matyjaszek (Graduate Researcher), Marek Jeliński (Graduate Researcher), Antoni Pawłowicz (Graduate Researcher), Aleksander Szymczyk (Graduate Researcher), Dominik Lau (Graduate Researcher), Filip Pawlicki (Undergraduate Researcher).
+- [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl) (Principal Investigator)
+- [Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en) (Postdoc)
+- Karmela Matyjaszek (Graduate Researcher)
+- Marek Jeliński (Graduate Researcher)
+- Antoni Pawłowicz (Graduate Researcher)
+- Aleksander Szymczyk (Graduate Researcher)
+- Dominik Lau (Graduate Researcher)
+- Filip Pawlicki (Undergraduate Researcher)
