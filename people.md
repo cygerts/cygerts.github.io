@@ -29,7 +29,10 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 
 - [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl) (Principal Investigator)
 - [Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en) (Postdoc)
+- [Jan Dubiński](https://scholar.google.com/citations?hl=en&user=iG319iwAAAAJ&view_op=list_works&sortby=pubdate) (Postdoc)
 - Karmela Matyjaszek (Graduate Researcher)
+- [Maciej Chrabąszcz](https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate) (Graduate Researcher)
+- Mateusz Kowalczyk (Graduate Researcher)
 - Marek Jeliński (Graduate Researcher)
 - Antoni Pawłowicz (Graduate Researcher)
 - Aleksander Szymczyk (Graduate Researcher)
