@@ -28,8 +28,8 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 ![Group photo](/assets/images/group.jpg){: style="width:100%; max-width:800px; display:block; margin: 1.2rem 0;"}
 
 - [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl) (Principal Investigator)
-- [Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en) (Postdoc)
-- [Jan Dubiński](https://scholar.google.com/citations?hl=en&user=iG319iwAAAAJ&view_op=list_works&sortby=pubdate) (Postdoc)
+- [Marcin Sendera](https://scholar.google.com/citations?user=ScNBRmQAAAAJ&hl=en) (Senior Researcher)
+- [Jan Dubiński](https://scholar.google.com/citations?hl=en&user=iG319iwAAAAJ&view_op=list_works&sortby=pubdate) (Senior Researcher)
 - [Maciej Chrabąszcz](https://scholar.google.com/citations?hl=en&user=qdUVcecAAAAJ&view_op=list_works&sortby=pubdate) (PhD Researcher)
 - Mateusz Kowalczyk (PhD Researcher)
 - Marek Jeliński (Graduate Researcher)
