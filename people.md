@@ -25,6 +25,16 @@ permalink: /group/
 
 We are AI Safety and Transparency Department at NASK - National Research Institute.
 
+As advanced AI systems are increasingly deployed in real-world applications, ensuring their safety, reliability, and transparency becomes a critical challenge. Our research focuses on developing methods to discover, measure, and mitigate failures of modern AI models before and during deployment.
+
+### Evaluation
+We develop evaluation methodologies for foundation models, focusing on discovering novel failure modes, assessing safety and designing contamination-free evaluations that accurately measure model capabilities.
+
+### Monitoring
+We develop deployment-time monitoring methods that detect potentially unsafe model behaviors before harmful actions are executed.
+
+By combining rigorous evaluation with deployment-time monitoring, we aim to advance trustworthy, safe, and transparent AI systems.
+
 ![Group photo](/assets/images/group.jpg){: style="width:100%; max-width:800px; display:block; margin: 1.2rem 0;"}
 
 - [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl) (Principal Investigator)
