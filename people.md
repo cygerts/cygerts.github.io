@@ -27,8 +27,6 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 - **Evaluation**. Discovering failure modes, assessing safety, and designing contamination-free evaluations.
 - **Monitoring**. Detecting potentially unsafe model behaviors during deployment before harmful actions are executed.
 
-By combining rigorous evaluation with deployment-time monitoring, we aim to advance trustworthy, safe, and transparent AI systems.
-
 ![Group photo](/assets/images/group.jpg){: style="width:100%; max-width:800px; display:block; margin: 1.2rem 0;"}
 
 - [Sebastian Cygert](https://scholar.google.pl/citations?user=wLH9PP8AAAAJ&hl=pl) (Principal Investigator)
