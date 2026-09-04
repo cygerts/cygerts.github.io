@@ -42,4 +42,4 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 - [Filip Pawlicki](https://scholar.google.com/citations?user=1ZQL4qIAAAAJ&hl=pl) (Undergraduate Researcher)
 - Kamil Dobies (Undergraduate Researcher)
 - Zuzanna Waszczuk (Intern)
-- Wojciech Łapacz (Intern)
+- [Wojciech Łapacz](https://scholar.google.com/citations?user=mIFxLFUAAAAJ&hl=pl) (Intern)
