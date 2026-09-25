@@ -187,6 +187,26 @@ permalink: /publications/
   -->
 
   <div class="pub-list" id="pub-list">
+
+     <article class="pub-card" data-topics="preprint llm-safety">
+      <figure class="pub-thumb">
+        <img src="/assets/publications/internal-monologue.png" alt="Internal Monologue publication cover" />
+      </figure>
+      <div>
+        <h3 class="pub-title">Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics</h3>
+        <p class="pub-authors">Maciej Chrabąszcz, Aleksander Szymczyk, Marcin Sendera, Tomasz Trzciński, Sebastian Cygert</p>
+        <div class="pub-meta">
+          <span class="pub-chip venue">NeurIPS 2026</span>
+          <!--
+          <span class="pub-chip topic">LLM Safety</span>
+          -->
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2605.18549" target="_blank" rel="noopener noreferrer">Paper</a>
+        </div>
+      </div>
+    </article>
+
     <article class="pub-card" data-topics="conference llm-safety">
       <figure class="pub-thumb">
         <img src="/assets/publications/efficient-llm-moderation.png" alt="Efficient LLM Moderation publication cover" />
@@ -222,25 +242,6 @@ permalink: /publications/
         </div>
         <div class="pub-links">
           <a href="https://arxiv.org/pdf/2606.03305" target="_blank" rel="noopener noreferrer">PDF</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="pub-card" data-topics="preprint llm-safety">
-      <figure class="pub-thumb">
-        <img src="/assets/publications/internal-monologue.png" alt="Internal Monologue publication cover" />
-      </figure>
-      <div>
-        <h3 class="pub-title">Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics</h3>
-        <p class="pub-authors">Maciej Chrabąszcz, Aleksander Szymczyk, Marcin Sendera, Tomasz Trzciński, Sebastian Cygert</p>
-        <div class="pub-meta">
-          <span class="pub-chip venue">arXiv Preprint</span>
-          <!--
-          <span class="pub-chip topic">LLM Safety</span>
-          -->
-        </div>
-        <div class="pub-links">
-          <a href="https://arxiv.org/abs/2605.18549" target="_blank" rel="noopener noreferrer">Paper</a>
         </div>
       </div>
     </article>
