@@ -41,5 +41,5 @@ We are AI Safety and Transparency Department at NASK - National Research Institu
 - Aleksander Szymczyk (Graduate Researcher)
 - [Filip Pawlicki](https://scholar.google.com/citations?user=1ZQL4qIAAAAJ&hl=pl) (Undergraduate Researcher)
 - Kamil Dobies (Undergraduate Researcher)
-- Zuzanna Waszczuk (Intern)
-- [Wojciech Łapacz](https://scholar.google.com/citations?user=mIFxLFUAAAAJ&hl=pl) (Intern)
+<!-- - Zuzanna Waszczuk (Intern) -->
+<!-- - [Wojciech Łapacz](https://scholar.google.com/citations?user=mIFxLFUAAAAJ&hl=pl) (Intern) -->
