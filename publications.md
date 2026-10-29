@@ -192,7 +192,10 @@ permalink: /publications/
 
   <div class="pub-list" id="pub-list">
 
-    <article class="pub-card no-thumb" data-topics="conference llm-safety">
+    <article class="pub-card" data-topics="conference llm-safety">
+      <figure class="pub-thumb">
+        <img src="/assets/publications/teaser_new.png" alt="Attack success rates for adversarial red-teaming methods across four language models" />
+      </figure>
       <div>
         <h3 class="pub-title">Data-Driven Red-Teaming: Reusing Adversarial Attacks via Metadata-Aware Retrieval</h3>
         <p class="pub-authors">Mateusz Kowalczyk, Marcin Sendera, Sebastian Cygert</p>
@@ -201,7 +204,6 @@ permalink: /publications/
         </div>
         <div class="pub-links">
           <a href="https://aclanthology.org/2026.findings-emnlp.1622.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-          <a href="https://aclanthology.org/2026.findings-emnlp.1622/" target="_blank" rel="noopener noreferrer">ACL Anthology</a>
           <a href="https://github.com/NASK-AISafety/a-art" target="_blank" rel="noopener noreferrer">Code</a>
           <a href="https://huggingface.co/datasets/NASK-PIB/a-art-jailbreaks" target="_blank" rel="noopener noreferrer">Dataset</a>
         </div>
