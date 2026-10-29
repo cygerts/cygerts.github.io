@@ -79,6 +79,10 @@ permalink: /publications/
     display: none;
   }
 
+  .pub-card.no-thumb {
+    grid-template-columns: 1fr;
+  }
+
   .pub-thumb {
     margin: 0;
   }
@@ -187,6 +191,22 @@ permalink: /publications/
   -->
 
   <div class="pub-list" id="pub-list">
+
+    <article class="pub-card no-thumb" data-topics="conference llm-safety">
+      <div>
+        <h3 class="pub-title">Data-Driven Red-Teaming: Reusing Adversarial Attacks via Metadata-Aware Retrieval</h3>
+        <p class="pub-authors">Mateusz Kowalczyk, Marcin Sendera, Sebastian Cygert</p>
+        <div class="pub-meta">
+          <span class="pub-chip venue">Findings of ACL: EMNLP 2026</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://aclanthology.org/2026.findings-emnlp.1622.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+          <a href="https://aclanthology.org/2026.findings-emnlp.1622/" target="_blank" rel="noopener noreferrer">ACL Anthology</a>
+          <a href="https://github.com/NASK-AISafety/a-art" target="_blank" rel="noopener noreferrer">Code</a>
+          <a href="https://huggingface.co/datasets/NASK-PIB/a-art-jailbreaks" target="_blank" rel="noopener noreferrer">Dataset</a>
+        </div>
+      </div>
+    </article>
 
      <article class="pub-card" data-topics="preprint llm-safety">
       <figure class="pub-thumb">
