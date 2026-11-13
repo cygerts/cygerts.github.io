@@ -1,0 +1,6 @@
+{%- for author in include.authors -%}
+  {%- if author.name -%}
+    {%- if author.url -%}<a href="{{ author.url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}
+  {%- else -%}{{ author }}{%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}
