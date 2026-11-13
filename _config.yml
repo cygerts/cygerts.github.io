@@ -6,5 +6,17 @@ markdown: kramdown
 header_pages:
   - people.md
   - publications.md
+  - blog.html
   - funding.md
   - news.md
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog-post
+      permalink: /blog/:title/
