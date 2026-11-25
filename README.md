@@ -8,6 +8,7 @@ Simple GitHub Pages website for a research group.
 - People: `people.md`
 - Publications: `publications.md`
 - Blog: `blog.html`, posts in `_posts/` (optional `external_url` and `external_label` add a cross-post link)
+- Project pages: standalone static sites in `project-pages/<name>/` (e.g. `project-pages/uncovering-the-tells/`), linked from `publications.md`
 - Funding: `funding.md`
 - News: `news.md`
 

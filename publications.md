@@ -192,6 +192,24 @@ permalink: /publications/
 
   <div class="pub-list" id="pub-list">
 
+    <article class="pub-card" data-topics="preprint benchmarking">
+      <figure class="pub-thumb">
+        <img src="/assets/publications/uncovering-the-tells.png" alt="Uncovering the Tells publication cover" />
+      </figure>
+      <div>
+        <h3 class="pub-title">Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination</h3>
+        <p class="pub-authors">Dominik B. Lau, Filip Pawlicki, Jan Dubiński, Sebastian Cygert</p>
+        <div class="pub-meta">
+          <span class="pub-chip venue">arXiv Preprint</span>
+        </div>
+        <div class="pub-links">
+          <a href="/project-pages/uncovering-the-tells/">HTML</a>
+          <a href="https://arxiv.org/pdf/2611.30639" target="_blank" rel="noopener noreferrer">PDF</a>
+          <a href="https://github.com/NASK-AISafety/uncovering-the-tells" target="_blank" rel="noopener noreferrer">Code</a>
+        </div>
+      </div>
+    </article>
+
     <article class="pub-card" data-topics="conference llm-safety">
       <figure class="pub-thumb">
         <img src="/assets/publications/teaser_new.png" alt="Attack success rates for adversarial red-teaming methods across four language models" />

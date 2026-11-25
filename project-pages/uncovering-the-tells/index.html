@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="title" content="Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination - Lau, Pawlicki, Dubiński, Cygert">
+  <meta name="description" content="A cost-efficient, black-box auditing framework that detects LLM training data contamination from context-induced shifts at a few informative token positions, with about 3× fewer queries than uniform sampling.">
+  <meta name="keywords" content="data contamination, black-box auditing, membership inference, large language models, memorization, benchmark leakage">
+  <meta name="author" content="Dominik B. Lau, Filip Pawlicki, Jan Dubiński, Sebastian Cygert">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NASK National Research Institute">
+  <meta property="og:title" content="Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination">
+  <meta property="og:description" content="A cost-efficient, black-box auditing framework that detects LLM training data contamination from context-induced shifts at a few informative token positions, with about 3× fewer queries than uniform sampling.">
+  <meta property="og:url" content="https://cygerts.github.io/project-pages/uncovering-the-tells/">
+  <meta property="article:published_time" content="2026-11-23T00:00:00.000Z">
+  <meta property="article:author" content="Dominik B. Lau, Filip Pawlicki">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Data Contamination">
+  <meta property="article:tag" content="Black-Box Auditing">
+  <meta property="article:tag" content="Large Language Models">
+
+  <meta name="citation_title" content="Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination">
+  <meta name="citation_author" content="Lau, Dominik B.">
+  <meta name="citation_author" content="Pawlicki, Filip">
+  <meta name="citation_author" content="Dubiński, Jan">
+  <meta name="citation_author" content="Cygert, Sebastian">
+  <meta name="citation_publication_date" content="2026/11/23">
+  <meta name="citation_arxiv_id" content="2611.30639">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2611.30639">
+
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <title>Uncovering the Tells - Lau, Pawlicki, Dubiński, Cygert | NASK</title>
+  
+  
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/demo.css">
+  
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/demo.js"></script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination",
+    "description": "A cost-efficient, black-box auditing framework that detects LLM training data contamination from context-induced shifts at a few informative token positions, with about 3× fewer queries than uniform sampling.",
+    "author": [
+      {"@type": "Person", "name": "Dominik B. Lau", "affiliation": {"@type": "Organization", "name": "NASK National Research Institute"}},
+      {"@type": "Person", "name": "Filip Pawlicki", "affiliation": [{"@type": "Organization", "name": "NASK National Research Institute"}, {"@type": "Organization", "name": "Gdańsk University of Technology"}]},
+      {"@type": "Person", "name": "Jan Dubiński", "affiliation": {"@type": "Organization", "name": "NASK National Research Institute"}},
+      {"@type": "Person", "name": "Sebastian Cygert", "affiliation": [{"@type": "Organization", "name": "NASK National Research Institute"}, {"@type": "Organization", "name": "Gdańsk University of Technology"}]}
+    ],
+    "datePublished": "2026-11-23",
+    "url": "https://cygerts.github.io/project-pages/uncovering-the-tells/",
+    "sameAs": "https://arxiv.org/abs/2611.30639",
+    "keywords": ["data contamination", "black-box auditing", "large language models", "membership inference"],
+    "abstract": "Existing methods for assessing training data contamination in Large Language Models achieve high accuracy, but fundamentally rely on gray-box access, rendering them inapplicable to fully black-box environments. This limitation forces auditors to rely on full-sequence sampling or rigid heuristics, both of which incur prohibitive inference costs and struggle to isolate the underlying memorization signal. To overcome this, we propose a generation-based black-box framework that infers context-induced information gain from targeted token discrepancies. We introduce a budget-constrained auditing regime, building on the empirical observation that the membership signal is highly sparse and concentrated in a few highly informative tokens. We formalize this sparsity, showing why uniform sampling needs many more samples than a policy that targets informative positions. Empirically, our approach achieves state-of-the-art black-box separation accuracy while needing about 3\u00d7 fewer queries than uniform position sampling. Finally, we apply this methodology to closed frontier models, exploring its capacity and limits in surfacing potential training data overlaps on commercial APIs.",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+  </script>
+</head>
+<body>
+
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Dominik B. Lau<sup>1*</sup>,</span>
+              <span class="author-block">Filip Pawlicki<sup>1,2*</sup>,</span>
+              <span class="author-block">Jan Dubiński<sup>1</sup>,</span>
+              <span class="author-block">Sebastian Cygert<sup>1,2</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>NASK National Research Institute, <sup>2</sup>Gdańsk University of Technology<br>Preprint, 2026</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution; order determined by a coin flip</small></span>
+            </div>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2611.30639" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/NASK-AISafety/uncovering-the-tells" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2611.30639" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure class="image">
+        <img src="static/images/hero_figure.png" alt="Overview of the black-box contamination audit">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Existing methods for assessing training data contamination in Large Language Models achieve high accuracy, but fundamentally rely on gray-box access, rendering them inapplicable to fully black-box environments. This limitation forces auditors to rely on full-sequence sampling or rigid heuristics, both of which incur prohibitive inference costs and struggle to isolate the underlying memorization signal. To overcome this, we propose a generation-based black-box framework that infers context-induced information gain from targeted token discrepancies. We introduce a budget-constrained auditing regime, building on the empirical observation that the membership signal is highly sparse and concentrated in a few highly informative tokens. We formalize this sparsity, showing why uniform sampling needs many more samples than a policy that targets informative positions. Empirically, our approach achieves state-of-the-art black-box separation accuracy while needing about 3× fewer queries than uniform position sampling. Finally, we apply this methodology to closed frontier models, exploring its capacity and limits in surfacing potential training data overlaps on commercial APIs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <div class="content has-text-justified">
+      <p>For each document we ask the model for its next token at a chosen position twice: once with and once without a short context built from the most similar other documents in the audited dataset. We record only whether the greedy token matches the ground truth, giving a shift <em>δ<sub>j</sub></em> ∈ {−1, 0, +1} per position. No log-probabilities are needed.</p>
+      <ul>
+        <li><strong>Memorized text</strong> already has strong exact-match priors, so extra context mostly <em>hurts</em> (δ = −1).</li>
+        <li><strong>Unseen text</strong> has more room to improve, so context mostly <em>helps</em> (δ = +1) through in-context learning.</li>
+        <li><strong>Sparsity.</strong> Only ρ ≈ 0.1 of positions change at all. A Bernstein-bound argument shows uniform sampling needs about 1/ρ times more positions than a policy that targets informative ones.</li>
+        <li><strong>LCS token selection.</strong> We query tokens within the Longest Common Subsequence between the target document and the context, which concentrates the budget on informative positions.</li>
+      </ul>
+      <p>Counting the shifts over the queried positions of a dataset <em>D</em>, with <em>n</em><sub>+</sub> positions where context helps (δ = +1) and <em>n</em><sub>−</sub> positions where it hurts (δ = −1), the dataset-level contamination score is</p>
+      <div class="has-text-centered is-size-4" style="margin: 1.2em 0;">
+        <em>S</em>(<em>D</em>) &nbsp;=&nbsp;
+        <span style="display:inline-block; vertical-align:middle; text-align:center;">
+          <span style="display:block; padding:0 .4em; border-bottom:1.5px solid currentColor;"><em>n</em><sub>−</sub></span>
+          <span style="display:block; padding:0 .4em;"><em>n</em><sub>+</sub> + <em>n</em><sub>−</sub></span>
+        </span>
+        &nbsp;=&nbsp; <span style="display:inline-block; vertical-align:middle;">(1 − <em>μ</em>) / 2</span>,
+        &nbsp;&nbsp;<em>μ</em> = E[δ | δ ≠ 0]
+      </div>
+      <p>It is the share of changed positions where context hurt. Seen data scores high, unseen data low. Positions with δ = 0 are ignored.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="demo">
+  <div class="container is-max-desktop demo" id="lcs-demo">
+    <h2 class="title is-3 has-text-centered">Uncovering the Tells</h2>
+    <p class="demo-intro">Run an audit step by step.</p>
+
+    <div class="demo-step">
+      <div class="demo-step-head">
+        <span class="demo-step-num">1</span>
+        <span class="demo-step-title">Pick a dataset</span>
+        <span class="demo-step-sub">Pythia was trained only on the Pile and OLMo only on Dolma, so each model has seen one group and not the other. The last group was published after both were trained.</span>
+      </div>
+      <div class="demo-group-label">The Pile (seen by Pythia, unseen by OLMo)</div>
+      <div class="demo-chips" id="demo-pile"></div>
+      <div class="demo-group-label">Dolma (seen by OLMo, unseen by Pythia)</div>
+      <div class="demo-chips" id="demo-dolma"></div>
+      <div class="demo-group-label">Published later (unseen by both)</div>
+      <div class="demo-chips" id="demo-unseen" style="margin-bottom:0"></div>
+    </div>
+
+    <div class="demo-step">
+      <div class="demo-step-head">
+        <span class="demo-step-num">2</span>
+        <span class="demo-step-title">Pick a model to audit</span>
+        <span class="demo-step-sub">We only see the text it generates, one greedy token at a time.</span>
+      </div>
+      <div class="demo-chips" id="demo-models" style="margin-bottom:0"></div>
+    </div>
+
+    <div class="demo-step" id="demo-step-run">
+      <div class="demo-step-head">
+        <span class="demo-step-num">3</span>
+        <span class="demo-step-title">Run the audit</span>
+        <span class="demo-step-sub">For every document we take the most similar other documents in the dataset as context and select the tokens whose preceding text also appears in the context, longest matches first. At each selected token we ask the model for the next token twice, without and with the context.</span>
+      </div>
+      <div class="demo-actions" style="margin:0 0 1rem">
+        <button type="button" class="demo-btn" id="demo-run"><i class="fas fa-play"></i>Run audit</button>
+        <button type="button" class="demo-btn is-ghost" id="demo-skip" hidden>Skip to the end</button>
+        <span class="demo-status" id="demo-status"></span>
+      </div>
+      <div class="demo-strip" id="demo-strip" aria-label="Documents"></div>
+      <div class="demo-tally" id="demo-tally"></div>
+      <div class="demo-panels">
+        <div class="demo-panel">
+          <div class="demo-panel-head"><span>Context · 3 similar documents</span></div>
+          <div class="demo-text" id="demo-context"></div>
+        </div>
+        <div class="demo-panel">
+          <div class="demo-panel-head"><span id="demo-docpos">Audited document</span><span id="demo-target-count" style="text-transform:none;letter-spacing:0;font-weight:500"></span></div>
+          <div class="demo-text" id="demo-target"></div>
+        </div>
+      </div>
+      <div class="demo-info" id="demo-info">Hover over or click a selected token to see what the model predicted.</div>
+      <div class="demo-legend">
+        <span><i class="demo-swatch" style="background:var(--match)"></i>shared with context</span>
+        <span><i class="demo-swatch" style="background:var(--span)"></i>matching span</span>
+        <span><i class="demo-swatch" style="background:var(--text-primary)"></i>selected</span>
+        <span><i class="demo-swatch" style="background:var(--helped)"></i>context helped</span>
+        <span><i class="demo-swatch" style="background:var(--hurt)"></i>context hurt</span>
+        <span><i class="demo-swatch" style="background:var(--unchanged)"></i>no change</span>
+      </div>
+    </div>
+
+    <div class="demo-step is-locked" id="demo-step-score">
+      <div class="demo-step-head">
+        <span class="demo-step-num">4</span>
+        <span class="demo-step-title">Contamination score</span>
+        <span class="demo-step-sub">A model that memorised the data already knows the continuation, so the context more often hurts than helps. Each dot is one dataset scored by the same model.</span>
+      </div>
+      <div class="demo-legend" style="margin:0 0 1rem">
+        <span><span class="demo-dot seen"></span>seen</span>
+        <span><span class="demo-dot unseen"></span>unseen</span>
+      </div>
+      <div id="demo-score"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+    <div class="content has-text-justified">
+      <p>We audit 11 open-weights base models (GPT-Neo, Pythia, RWKV-4, OLMo) whose training data is known, using 100 documents per dataset and only <strong>W = 16</strong> queried tokens per document. Each model is tested on datasets it was trained on (seen) and on temporally separated datasets it could not have seen (unseen).</p>
+
+      <h3>Seen and unseen data separate cleanly</h3>
+      <p>With LCS, seen datasets score around 0.4&ndash;0.8 on every model, while unseen datasets stay mostly below 0.3. The two groups barely overlap, with a mean dataset-level AUC of 0.95. The other black-box methods are much weaker. Carlini's extraction attack and SimMIA pick out only a few seen datasets, and SA-MIA is close to chance.</p>
+      <figure class="image">
+        <img src="static/images/separation_grid.png" alt="Contamination scores of seen and unseen datasets across 11 base models for LCS, Carlini, SA-MIA and SimMIA">
+        <figcaption class="has-text-centered is-size-6">Contamination scores across 11 base checkpoints. Red: seen corpora, blue: unseen. Each dot is one dataset; boxes show quartiles with 5&ndash;95% whiskers.</figcaption>
+      </figure>
+      <div class="table-container"><table class="table is-striped is-hoverable is-fullwidth"><thead><tr><th>Black-box method</th><th>Mean dataset-level AUC</th></tr></thead><tbody>
+<tr><td>Carlini (extraction)</td><td>0.732</td></tr>
+<tr><td>SimMIA</td><td>0.674</td></tr>
+<tr><td>SA-MIA</td><td>0.562</td></tr>
+<tr><td><strong>LCS (Ours)</strong></td><td><strong>0.952</strong></td></tr>
+</tbody></table></div>
+
+      <h3>On par with gray-box methods</h3>
+      <p>LCS only sees the tokens a model returns, yet it beats Loss, Min-K% and zlib, which need log-probabilities. It matches CoDeC in AUC (0.952 vs. 0.961) and detects more contaminated datasets at a 5% false-positive rate (TPR 0.893 vs. 0.698).</p>
+      <div class="table-container"><table class="table is-striped is-hoverable is-fullwidth"><thead><tr><th>Method</th><th>AUC</th><th>TPR@5%FPR</th></tr></thead><tbody>
+<tr><td>Loss</td><td>0.585</td><td>0.120</td></tr>
+<tr><td>Min-K%</td><td>0.599</td><td>0.134</td></tr>
+<tr><td>zlib</td><td>0.759</td><td>0.147</td></tr>
+<tr><td>CoDeC (gray-box)</td><td>0.961</td><td>0.698</td></tr>
+<tr><td><strong>LCS (Ours, black-box)</strong></td><td><strong>0.952</strong></td><td><strong>0.893</strong></td></tr>
+</tbody></table></div>
+
+      <h3>Few queries are enough</h3>
+      <p>Detection saturates at W &le; 30 tokens per document, close to an Oracle that knows which positions are informative. A naive audit needs about 3&times; more queries to reach the same accuracy. The signal also survives post-training: AUC stays the same or goes up after SFT and DPO for every model except OLMo 7B (0.910 &rarr; 0.859 after SFT).</p>
+
+      <h3>Frontier models</h3>
+      <p>We ran the audit through public APIs on Kimi-k2.6, DeepSeek-V3, DeepSeek-V4-Pro, Claude Sonnet 4.5 and Claude Opus 4.5, with at most 3,200 calls per dataset. Without public training data for these models, we use two 2026 datasets (AIME 2026, Reddit 2026) as controls that were published after the models' training.</p>
+      <figure class="image">
+        <img src="static/images/frontier_heatmap.png" alt="Heatmap of contamination scores for five frontier models on twelve datasets">
+        <figcaption class="has-text-centered is-size-6">Contamination score per model and dataset. The small numbers below each score are the counts of positive and negative flips. AIME 2026 and Reddit 2026 are the controls.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>Kimi-k2.6 and DeepSeek.</strong> Older datasets score 0.4&ndash;0.6, but so do the controls (0.30&ndash;0.52). No dataset stands clearly above the baseline. MMLU scores at or below the controls on all five models.</li>
+        <li><strong>Saturation.</strong> Frontier models already predict most tokens of common text correctly without context, so fewer positions can flip and the score rests on only a handful of them.</li>
+        <li><strong>Claude.</strong> Even with assistant prefill, 93% of replies without context come back in assistant voice, and the target token appears at only about 1% of positions. Flip counts are tiny (for example 0/3 or 3/8), so the scores swing between 0 and 1.</li>
+      </ul>
+      <p>The frontier model results are exploratory. The whole suite cost about $133 in API calls.</p>
+    </div>
+  </div>
+</section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{uncoveringthetells,
+  title={Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination},
+  author={Lau, Dominik B. and Pawlicki, Filip and Dubi{\'n}ski, Jan and Cygert, Sebastian},
+  journal={arXiv preprint arXiv:2611.30639},
+  year={2026},
+  url={https://arxiv.org/abs/2611.30639}
+}</code></pre>
+    </div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+  
+
+  </body>
+  </html>
